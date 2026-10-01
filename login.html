@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - Miến So</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="logo" width="75" height="75" style="margin-right: 50px;">
+        <h2>Miến So</h2>
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="shop.html">Cửa hàng</a>
+            <a href="login.html">Đăng nhập</a>
+            <a href="team.html">Liên hệ & Góp ý</a>
+        </nav>
+    </header>
+
+    <main style="background-image:url(langso.jpg);">
+        <h2>Đăng ký hội viên </h2>
+        <br>
+        <form id="loginForm" class="login-form">
+            <div class="form-group">
+                <label>Tên đăng nhập:</label>
+                <input type="text" id="tendangnhap" placeholder="Nhập tên của bạn">
+                <span class="error-msg" id="thongbao"></span>
+            </div>
+            <div class="form-group">
+                <label>Tạo mật khẩu:</label>
+                <input type="password" id="matkhau" placeholder="Nhập mật khẩu mới">
+                <span class="error-msg" id="thongbao2"></span>
+            </div>
+            <button type="submit" class="btn-submit trangthai" id="dangnhap">Đăng Ký</button>
+        </form>
+    </main>
+
+    <footer><p>© 2026 - Bài tập lớn Thiết kế Web | Thực hiện bởi Nhóm 18</p></footer>
+    <script lang="javascript">
+        var userhople = false;
+        var mkhople = false;
+        var submit = document.getElementById("dangnhap");
+        document.getElementById("tendangnhap").oninput = function () {
+            var user = String(document.getElementById("tendangnhap").value);
+            if (user.length < 8) {
+                document.getElementById("thongbao").innerHTML = "*tên đăng nhập phải có ít nhất 8 ký tự*";
+                thongbao.style.color = "red"
+                userhople=false;
+            }
+            else {
+                document.getElementById("thongbao").innerHTML = "tên đăng nhập hợp lệ";
+                thongbao.style.color = "green";
+                userhople = true;
+            }
+            if (userhople && mkhople) {
+                submit.classList.remove("trangthai");
+            }
+            else {
+                submit.classList.add("trangthai");
+            }
+        }
+
+        document.getElementById("matkhau").oninput = function () {
+            var mk = String(document.getElementById("matkhau").value);
+            if (mk.length < 6) {
+                document.getElementById("thongbao2").innerHTML = "mật khẩu phải có ít nhất 6 ký tự";
+                thongbao2.style.color = "red";
+                mkhople=false;
+            } else {
+                document.getElementById("thongbao2").innerHTML = "mật khẩu hợp lệ";
+                thongbao2.style.color = "green";
+                mkhople = true;
+            }
+            if (userhople && mkhople) {
+                submit.classList.remove("trangthai");
+            }
+            else {
+                submit.classList.add("trangthai");
+            }
+        }
+
+    </script>
+</body>
+</html>

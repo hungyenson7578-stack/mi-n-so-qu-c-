@@ -1,0 +1,56 @@
+/* Bố cục bao ngoài cùng */
+.elegant-section {
+    background-color: #ffffff;
+    padding: 60px 0; /* Tạo khoảng trống trên dưới cho toàn bộ khu vực */
+}
+
+/* Định dạng phần text căn giữa (Khống chế độ rộng để giống ảnh mẫu) */
+.text-center-block {
+    text-align: center;
+    max-width: 800px; /* Bóp hẹp chiều rộng của đoạn chữ lại như trong ảnh */
+    margin: 0 auto 50px auto; /* Căn giữa màn hình và tạo khoảng cách với phần ảnh ở dưới */
+    padding: 0 20px;
+}
+
+.sub-title {
+    color: #888; /* Màu xám nhạt */
+    font-size: 14px;
+    letter-spacing: 2px; /* Tạo khoảng cách giữa các chữ cái */
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: normal; /* Chữ không quá đậm */
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.8; /* Tạo khoảng cách giữa các dòng chữ cho thoáng */
+}
+
+/* Định dạng phần cụm 3 hình ảnh */
+.image-gallery-3 {
+    display: grid; /* Sử dụng dạng lưới */
+    grid-template-columns: repeat(3, 1fr); /* Chia làm 3 cột bằng nhau */
+    gap: 10px; /* Tạo khoảng hở màu trắng nhỏ giữa các ảnh giống hệt ảnh mẫu */
+    width: 100%;
+    padding: 0 10px; /* Cách lề màn hình một chút xíu */
+}
+
+.img-box img {
+    width: 100%;
+    height: 400px; /* Cố định chiều cao để 3 ảnh bằng nhau, bạn có thể tăng giảm tùy ý */
+    object-fit: cover; /* Giúp ảnh không bị méo khi bị cắt theo kích thước cố định */
+    display: block;
+}
+
+/* Phần text dưới cùng */
+.bottom-text {
+    margin-top: 50px; /* Cách phần hình ảnh ở trên ra */
+    margin-bottom: 0;
+}
