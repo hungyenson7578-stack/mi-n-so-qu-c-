@@ -6,24 +6,25 @@
 }
 
 body {
-    background-color: #f9fdf5;
-    color: #333;
+    background-color: #FAF8F2;
+    color: #798A76;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 header {
-    background-color: #7cb342;
+    background-color: #E4DCD0;
     padding: 15px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #798A76;
+    border-bottom: 1px solid #8C4E32;
 }
 
 header nav a {
-    color: white;
+    color: #798A76;
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
@@ -31,6 +32,8 @@ header nav a {
 
 header nav a:hover {
     text-decoration: underline;
+    color: #8C4E32;
+    padding-left: 5px;
 }
 
 main {
@@ -41,7 +44,7 @@ main {
 
 /* Trang Chủ */
 .home {
-    background: linear-gradient(rgba(33, 44, 61, 0.7), rgba(48, 67, 95, 0.7)), url(banner.jpg) center;
+    background: linear-gradient(rgba(156, 159, 159, 0.7), rgba(156, 159, 159, 0.7)), url(banner.jpg) center;
     text-align: center;
     color: white;
     padding: 100px 120px;
@@ -54,12 +57,12 @@ main {
 
 .home h1 {
     font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 5);
     margin-bottom: 20px;
 }
 
 .bocuc {
-    background-color: #F9F7F1;
+    background-color: #FCEFEA;
     padding: 60px 0;
 }
 
@@ -70,7 +73,7 @@ main {
 }
 
 .tieude2 {
-    color: cadetblue;
+    color: #1B3322;
     font-size: 40px;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -78,14 +81,14 @@ main {
 }
 
 .tieude {
-    color: #333;
+    color: #798A76;
     margin-bottom: 15px;
     font-size: 25px;
 }
 
 .noidung-trangchu {
     font-size: 20px;
-    color: #333;
+    color: #798A76;
     line-height: 2;
 }
 
@@ -115,8 +118,8 @@ main {
 }
 
 .nut {
-    background: #7cb342;
-    color: white;
+    background: #455441;
+    color: #FCEFEA;
     border: none;
     padding: 10px 10px;
     border-radius: 5px;
@@ -125,16 +128,16 @@ main {
 }
 
 .mua {
-    background-color: #8C4E32;
+    background-color: #455441;
     padding: 10px;
-    color: white;
+    color: #FCEFEA;
     cursor: pointer;
     border-radius: 8px;
 
 }
 
 .mua:hover {
-    background: #3A5A38;
+    background: #8C4E32;
 }
 
 .caco:hover{
@@ -157,7 +160,7 @@ main {
 
 .box1 {
     flex: 70%;
-    background-color: #cfd2dc;
+    background-color: #E4DCD0;
     border-radius: 8px;
     padding: 20px;
 }
@@ -173,7 +176,7 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     padding: 10px;
-    color: black;
+    color: #798A76;
     margin-bottom: 15px;
     text-align: left;
 }
@@ -182,7 +185,7 @@ main {
     flex: 1;
     border-radius: 2px;
     background-color: #f9fdf5;
-    color: black;
+    color: #798A76;
     flex-direction: column;
     border: 1px solid #ccc;
 }
@@ -211,11 +214,11 @@ main {
 }
 
 .hieuung {
-    background-color: white;
+    background-color: #E4DCD0;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #ddd;
-    color: black;
+    color: #798A76;
     flex: 1;
 }
 
@@ -226,7 +229,7 @@ main {
 }
 
 .hieuung ul li a, .hieuung ol li a{
-    color: rgb(13, 13, 13);
+    color: #798A76;
     text-decoration: none;
     margin:0;
     font-weight: bold;
@@ -255,12 +258,12 @@ main {
 
 /* Form Đăng Nhập */
 .login-form {
-    background: white;
+    background: #E4DCD0;
     padding: 30px;
     border-radius: 10px;
     width: 400px;
     margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0,2);
     text-align: left;
 }
 
@@ -293,8 +296,8 @@ main {
 }
 
 .btn-submit {
-    background: #7cb342;
-    color: white;
+    background: #8C4E32;
+    color: #FCEFEA;
     border: none;
     padding: 10px;
     width: 100%;
@@ -312,7 +315,7 @@ main {
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
+    background: #16281B;
     color: white;
 }
 /*liên hệ và góp ý*/
@@ -353,10 +356,10 @@ footer {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #8C4E32;
+    border: 3px solid #000000;
 }
 .banthan{
-    color: rgb(13, 13, 13);
+    color: #798A76;
     margin:0;
     font-weight: bold;
     padding-bottom:10px;
@@ -370,5 +373,5 @@ footer {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    
+    border: 3px solid #000000;
 }
